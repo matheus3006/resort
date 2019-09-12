@@ -9,3 +9,4 @@ export default class SingleRoom extends Component {
     )
   }
 }
+

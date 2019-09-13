@@ -24,5 +24,5 @@ function App() {
    </>
   );
 }
-39:25
+
 export default App;

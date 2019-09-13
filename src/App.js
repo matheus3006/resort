@@ -8,10 +8,13 @@ import SingleRoom from './pages/SingleRoom';
 import Error from './pages/Error';
 
 import { Route , Switch } from 'react-router-dom';
+//Importing components
+import NavBar from './components/Navbar';
 
 function App() {
   return (
   < >
+  <NavBar />
   <Switch>
   <Route exact path="/" component = {Home}/>
   <Route exact path="/rooms/" component = {Rooms}/>
@@ -21,5 +24,5 @@ function App() {
    </>
   );
 }
-
+39:25
 export default App;

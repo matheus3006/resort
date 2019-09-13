@@ -1,7 +1,9 @@
 import React from "react";
-
+import Hero from '../components/Hero';
 // import { Container } from './styles';
 
-export default function Home() {
-  return <div>hello from home </div>;
+const Home = () => {
+  return <Hero hero = "defaultHero"/>
 }
+
+export default Home;

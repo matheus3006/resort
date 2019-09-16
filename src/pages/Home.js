@@ -2,7 +2,9 @@ import React from "react";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
-import Services from '../components/Services'
+import Services from '../components/Services';
+import FeturedRooms from '../components/FeturedRooms';
+
 // import { Container } from './styles';
 
 const Home = () => {
@@ -16,8 +18,9 @@ const Home = () => {
       </Banner>
     </Hero>
     <Services/>
+    <FeturedRooms />
     </>
-  );
+  );  
 };
 
 export default Home;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Roomsfilter from './RoomsFilter';
+import RoomsFilter from './RoomsFilter';
 import RoomList from './RoomList';
 // import { Container } from './styles';
 

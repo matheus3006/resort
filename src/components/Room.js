@@ -3,6 +3,10 @@ import {Link} from 'react-router-dom';
 // import { Container } from './styles';
 import defaultImg from '../images/room-1.jpeg';
 import PropTypes from 'prop-types';
+
+
+
+
 export default function Room( {room} ) {
   const {name, slug , images, price} = room;
 

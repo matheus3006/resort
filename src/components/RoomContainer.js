@@ -11,8 +11,8 @@ function RoomContainer({ context }) {
   }
   return (
     <>
+      <RoomFilter rooms={rooms} />  
       <RoomList rooms={sortedRooms} />
-      <RoomFilter rooms={rooms} />
     </>
   );
 }
@@ -37,8 +37,8 @@ export default withRoomConsumer(RoomContainer);
 //         return (
 //           <div>
 //             Hello from rooms Container
-//             <RoomsFilter rooms={rooms} />
 //             <RoomList rooms={sortedRooms} />
+//             <RoomsFilter rooms={rooms} />
 //           </div>
 //         );
 //       }}

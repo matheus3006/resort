@@ -4,7 +4,7 @@ import{RoomContext} from '../context';
 import Title from '../components/Title';
 // import { Container } from './styles';
 
-export default function RoomsFilter() {
+export default function RoomFilter() {
   return (
     <div>Hello from room Filter</div>
   );

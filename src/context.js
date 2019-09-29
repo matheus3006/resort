@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 //Context API
-import items from "./data";
-import createClient from './Contentful';
+// import items from "./data";
+import Client from './Contentful';
 
 const RoomContext = React.createContext();
 //
@@ -22,10 +22,11 @@ class RoomProvider extends Component {
     pets: false
   };
   //getData { }
-  getData = async ()=>{
+  getData = async () => {
     try{
-      let response = await createClient.getEntries({
-        content_type: "resortRooms"
+      let response = await Client.getEntries({
+        content_type: "resortRooms",
+        order : "sys.createdAt"
       });
       let rooms = this.formatData(response.items);
       let featuredRooms = rooms.filter(room => room.featured === true);
@@ -49,7 +50,7 @@ class RoomProvider extends Component {
   }
 
   componentDidMount() {
-    this.getData
+    this.getData()
    
   }
   formatData(items) {
